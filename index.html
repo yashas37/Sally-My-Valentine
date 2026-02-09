@@ -264,13 +264,13 @@ input{
 <section class="card">
 <h2> Wat jou fantastisch maakt </h2>
   <p>In de kaart had ik al een reden genoemd: ik vind het heel leuk dat we over veel onderwerpen hetzelfde denken én dat we elkaar tegelijkertijd soms een compleet ander perspectief kunnen geven.  <br>
-    Maar dat is natuurlijk niet het enige wat ik leuk vind aan jou. Hieronder nog veel meer redenen waarom ik van jou hou. </p>
+    Maar dat is natuurlijk niet het enige wat ik leuk vind aan jou. Klik op de hartjes hieronder om nog veel meer redenen te lezen waarom ik van jou hou. </p>
 <div class="hearts">
   <div class="heart" onclick="openPopup('De manier waarop jij naar de wereld kijkt. Jouw realistische en praktische kijk is ontzettend verhelderend en kalmerend. En vaak ook precies wat ik nodig heb. Bijvoorbeeld wanneer ik me druk maak over dingen waar ik geen controle over heb. Of wanneer ik op een idealistische wolk zit.')">❤️</div>
   <div class="heart" onclick="openPopup('Hoe jij over jouw vrienden en familie praat. Je spreekt altijd met ontzettend veel liefde over de mensen om wie je geeft! Je bent niet bang om jouw liefde te tonen en om het hen te laten merken. Dat raakt me altijd!')">❤️</div>
-  <div class="heart" onclick="openPopup('Jouw lach en de manier waarop jouw ogen beginnen te glinsteren wanneer je blij bent. Je straalt altijd!')">❤️</div>
+  <div class="heart" onclick="openPopup('Jouw lach en de manier waarop jouw ogen beginnen te glinsteren wanneer je blij bent. Je straalt! Het is altijd oprecht waardoor het onmogelijk is om niet mee te lachen ')">❤️</div>
   <div class="heart" onclick="openPopup('Jouw brein. Van heel de omgeving mee krijgen en meerdere gesprekken tegelijkertijd kunnen volgen tot het razendsnel asscocieren en verbanden leggen. Hou ervan hoe jouw brein werkt!' )">❤️</div>
-  <div class="heart" onclick="openPopup('Dat je echt enthousiast kunt zijn! Over verschillende onderwerpen, over plannen, over gebeurtenissen die je meemaakt etc.jouw blijdschap is heel aanstekelijk!' )">❤️</div>
+  <div class="heart" onclick="openPopup('Dat je echt enthousiast kunt zijn! Over verschillende onderwerpen, over plannen, over eten, over gebeurtenissen die je hebt meegemaakt etc. Jouw blijdschap is heel aanstekelijk!' )">❤️</div>
   <div class="heart" onclick="openPopup('Jouw humor. Je weet )">❤️</div>
   <div class="heart" onclick="openPopup('De manier waarop jij orde kunt scheppen in chaos en iets heel gestructureerd en enthousiast kunt uitleggen')">❤️</div>
   <div class="heart" onclick="openPopup('Dat jij ervan houdt om te sporten, erop uit te gaan, de natuur in wilt gaan. ')">❤️</div>
@@ -363,7 +363,7 @@ function reveal(){sections.forEach(s=>{if(s.getBoundingClientRect().top<window.i
 window.addEventListener("scroll",reveal);window.addEventListener("load",reveal);
 
 /* COUNTDOWN */
-const target=new Date("2026-03-01");
+const target=new Date("2026-03-02");
 setInterval(()=>{document.getElementById("timer").innerText=Math.floor((target-new Date())/1000/60/60/24)+" dagen";},1000);
 
 /* POPUP */
@@ -441,7 +441,7 @@ L.circleMarker(myCoords,{radius:3,color:'green',fillColor:'green',fillOpacity:0.
 
 
 const distance = map.distance(L.latLng(currentLocation), L.latLng(myCoords))/1000;
-document.getElementById('distanceText').innerText = `Fysieke afstand tot elkaar: ${distance.toFixed(1)} km ❤️`;
+document.getElementById('distanceText').innerText = `Fysieke afstand: ${distance.toFixed(1)} km, maar altijd in mijn ❤️ `;
 </script>
 
 </body>
