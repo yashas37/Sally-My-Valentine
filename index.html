@@ -43,9 +43,10 @@ section.visible{
   min-height: 270px;
 
   display: block;      /* belangrijk voor centreren */
-  width: auto;         /* laat de card niet de volle breedte innemen */
-  max-width: 420px;    /* maximaal zo breed */
+  width: 90%;          /* past zich aan op mobiel */
+  max-width: 420px;    /* beperkt op desktop */
   margin: 30px auto;   /* horizontaal centreren + verticale marge */
+
 
 }
 
@@ -189,17 +190,6 @@ input{
   margin: 10px auto 0 auto;
 }
 
-/* MOBIEL: ruimte rond cards en kleinere popup-afbeelding */
-/* Mobiel: fix uitlijning cards */
-@media (max-width: 480px) {
-  section.card {
-    display: block;       /* zorgt dat het hele card als blok gaat */
-    margin-left: auto;    /* centreren horizontaal */
-    margin-right: auto;   /* centreren horizontaal */
-    padding-left: 12px;   /* behoud wat ruimte binnen */
-    padding-right: 12px;  /* behoud wat ruimte binnen */
-  }
-
   /* Carousel centeren */
   .carousel {
     margin-left: auto;
@@ -238,17 +228,20 @@ input{
     max-width: 200px; /* mobiel kleiner */
   }
 
-  /* Carousel centreren */
-  .carousel {
-    margin-left: auto;
-    margin-right: auto;
-  }
+  /* CAROUSEL */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 400px;   /* maximaal 400px */
+  margin: 0 auto;     /* horizontaal centreren */
+  overflow: hidden;
+  border-radius: 20px;
+}
+.carousel img {
+  width: 100%;
+  display: none;
+}
 
-  /* Carousel pijltjes iets kleiner */
-  .arrow {
-    font-size: 20px;
-    padding: 4px 10px;
-  }
 
   /* Hearts grid aanpassen voor mobiel */
   .hearts {
