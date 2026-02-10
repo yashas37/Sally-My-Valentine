@@ -35,14 +35,18 @@ section.visible{
 }
 
 /* CARDS */
-.card{
+.card {
   background: rgba(255,255,255,0.7);
-  padding:25px;
-  border-radius:25px;
-  box-shadow:0 8px 25px rgba(0,0,0,0.15);
-  min-height:270px;
-  display:inline-block;
-  width:100%;
+  padding: 25px;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  min-height: 270px;
+
+  display: block;      /* belangrijk voor centreren */
+  width: auto;         /* laat de card niet de volle breedte innemen */
+  max-width: 420px;    /* maximaal zo breed */
+  margin: 30px auto;   /* horizontaal centreren + verticale marge */
+
 }
 
 /* INTRO CARD (welkomstekst) */
