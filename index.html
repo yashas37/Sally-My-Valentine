@@ -175,35 +175,29 @@ input{
   font-size:1em;
 }
 
-/* MOBIEL: ruimte rond cards */
-@media (max-width: 480px) {
-  section {
-    margin: 30px 12px;
-  }
-
-  /* POPUP AFBEELDING RESPONSIVE */
+/* GEHEIME AFBEELDING RESPONSIEF */
 .gift-img {
   width: 100%;
-  max-width: 300px;   /* kleiner dan desktop */
+  max-width: 400px; /* beperk maximale grootte op desktop */
   height: auto;
   border-radius: 15px;
   display: block;
   margin: 10px auto 0 auto;
 }
 
-/* MOBIEL: popup smaller maken */
+/* MOBIEL: ruimte rond cards en kleinere popup-afbeelding */
 @media (max-width: 480px) {
+  section {
+    margin: 30px 12px;
+  }
   .popup {
     width: 90%;
     padding: 20px;
   }
   .gift-img {
-    max-width: 200px;  /* echt geschikt voor mobiel */
+    max-width: 200px; /* mobiel kleiner */
   }
-
 }
-
-
 </style>
 </head>
 
