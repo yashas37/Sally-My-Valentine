@@ -186,18 +186,79 @@ input{
 }
 
 /* MOBIEL: ruimte rond cards en kleinere popup-afbeelding */
+/* Mobiel: fix uitlijning cards */
 @media (max-width: 480px) {
+  section.card {
+    display: block;       /* zorgt dat het hele card als blok gaat */
+    margin-left: auto;    /* centreren horizontaal */
+    margin-right: auto;   /* centreren horizontaal */
+    padding-left: 12px;   /* behoud wat ruimte binnen */
+    padding-right: 12px;  /* behoud wat ruimte binnen */
+  }
+
+  /* Carousel centeren */
+  .carousel {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Hearts grid smaller op mobiel */
+  .hearts {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  }
+}
+
+ @media (max-width: 480px) {
+  /* Section marges */
   section {
     margin: 30px 12px;
   }
+
+  /* Cards centreren */
+  section.card {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  /* Popup smaller en padding */
   .popup {
     width: 90%;
     padding: 20px;
   }
+
+  /* Geheime afbeelding kleiner */
   .gift-img {
     max-width: 200px; /* mobiel kleiner */
   }
+
+  /* Carousel centreren */
+  .carousel {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Carousel pijltjes iets kleiner */
+  .arrow {
+    font-size: 20px;
+    padding: 4px 10px;
+  }
+
+  /* Hearts grid aanpassen voor mobiel */
+  .hearts {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 6px;
+  }
+
+  /* Intro tekst: iets meer marge */
+  .intro p {
+    font-size: 0.95em;
+    line-height: 1.5;
+  }
 }
+
 </style>
 </head>
 
