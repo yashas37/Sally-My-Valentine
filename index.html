@@ -42,7 +42,7 @@ section.visible{
   box-shadow: 0 8px 25px rgba(0,0,0,0.15);
   min-height: 270px;
 
-  display: block;      /* belangrijk voor centreren */
+  display: block;      /* centreren */
   width: 90%;          /* past zich aan op mobiel */
   max-width: 420px;    /* beperkt op desktop */
   margin: 30px auto;   /* horizontaal centreren + verticale marge */
@@ -196,7 +196,7 @@ input{
     margin-right: auto;
   }
 
-  /* Hearts grid smaller op mobiel */
+  /* Hearts grid mobiel*/
   .hearts {
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   }
@@ -243,7 +243,7 @@ input{
 }
 
 
-  /* Hearts grid aanpassen voor mobiel */
+  /* Hearts grid voor mobiel */
   .hearts {
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     gap: 6px;
@@ -303,7 +303,6 @@ input{
   <img src="photo1.jpg" data-caption="Deze dag gingen we met de auto naar Blend One. Even een kopje koffie drinken om er toch even uit te zijn. PS: iedere keer als ik een Chai of Pumpkin Spice latte drink, moet ik denken aan jouw reactie toen je een slokje nam" style="display:block;">
   <img src="photo2.jpg" data-caption="Na een serenade te hebben gekregen in de auto aten we samen bij het haardvuur een patatje! Hou van jou, van deze dag en van deze foto!" style="display:block;">
   <img src="photo18.jpg" data-caption="Jouw blijdschap op deze foto maakt me altijd zó vrolijk! Langs bij de bekendste visboer in Scheveningen: Simonis. Nadat een reigâh ons had verwelkomd aten we een kibbelingetje! " style="display:block;">
-  <!-- Voeg extra foto's hier toe -->
   <button class="arrow right">›</button>
   <p class="carousel-caption"></p>
 </div>
@@ -400,7 +399,7 @@ input{
 
 <!-- E-GIFTCARD POPUP -->
 <div class="popup-bg" id="giftPopup" onclick="closeGift()">
-  <div class="popup" onclick="event.stopPropagation()"> <!-- voorkomt dat klikken op de popup sluit -->
+  <div class="popup" onclick="event.stopPropagation()"> 
     <h2>Jouw cadeaukaart </h2>
     <p>
      Hierbij een Starbucks cadeaukaart die je kunt gebruiken in New York <em>(helaas niet geldig in Argentinië of Brazilië)</em> <br> Geniet ervan lieverd ☕
